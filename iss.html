@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- This is a school, Noroff, project exam to make a microsite.
+  -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Check out SpaceX`s space technology. International Space Station location and information">
+    <meta name="keywords" content="SpaceX, International Space station, ISS, current location">
+    <meta name="author" content="Heli Järveläinen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>International Space Station</title>     
+    <link rel="stylesheet" 
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin="">
+    </script>
+  
+     
+  </head>
+  <body>
+    <nav class="mobileNavigation">
+      <div id="linksMenu">
+        <a href="index.html">Home</a>
+        <a href="iss.html">International Space Station</a>
+        <a href="pom.html">Planned orbital missions</a>
+        <a href="wis.html">Who`s in Space</a>
+        <a href="shs.html">SpaceX - Human spaceflight</a>
+      </div>
+      <a class="hamburgerIcon" onclick="hamburger()">
+        <div>&#9776;</div>
+      </a>
+    </nav>
+
+      <header>
+        <div class="header">Space technology</div>
+              </header>
+  
+      <nav class="otherDevices">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="current" href="iss.html">International Space Station</a></li>
+          <li><a href="pom.html">Planned orbital missions</a></li>
+          <li><a href="wis.html">Who`s in Space</a></li>
+          <li><a href="shs.html">SpaceX - Human spaceflight</a></li>
+       </ul>
+      </nav>
+      
+    <main>
+      <h1>International Space Station</h1>
+      <div class="col-container">
+        <div class="col">
+          <h2 id="ISSh2">ISS - International Space Station</h2>
+          <img src="images/internationalspacestation.jpg" alt="International Space Station" id="issimg">
+        </div>
+        <div class="col" id="coliss">
+          <h2>ISS current location</h2>
+          <p id="ISSp">Latitude: <span id="lat"></span>
+            Longitude: <span id="long"></span></p>
+          <div id="issMap"></div>
+        </div>
+      </div>
+
+      <p class="issp">The International Space Station (ISS) is a modular spacestation, in low Earth Orbit. 
+        It is a multinational collaborative project involving five participating space agencies:
+        NASA (United States), Roscosmos (Russia), JAXA (Japan), ESA (Europe), and CSA (Canada).
+        Purpose of ISS are scientific research, Exploration, and education and cultural outreach.
+        Since 2012 SpaceX has been delivering cargo to and from the ISS. In 2020 SpaceX started to
+        transport  people to the Manned Orbiting Laboratory (MOL) under NASA`s commercial Crew Program.
+        <a href="https://www.spacex.com/human-spaceflight/iss/index.html" target="_blank">Read more from SpaceX.</a>
+      </P>
+   
+      <div class="col-container">
+        <div class="col">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/br3teR6xHMI" title="YouTube video player" 
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+          </iframe>
+          <p>Watch a video where SpaceX astronauts reach International Space Station</p>
+          <p>Wan`t to try to dock with the International Space Station yourself?
+            <a href="https://iss-sim.spacex.com" target="_blank">
+            Try now!</a></P>
+        </div>
+        <div class="col">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/SGP6Y0Pnhe4" title="YouTube video player" 
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+          </iframe>
+          <p>Are you curious to know how ISS works? Watch the video and get your questions answered.</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <hr />
+      <p>@heliuxdesign 2021</p>
+    </footer>
+    <script src="js/component/displayError.js"></script> 
+    <script src="js/script.js"></script>
+    <script src="js/scriptISS.js"></script>
+
+  </body>
+
+</html>

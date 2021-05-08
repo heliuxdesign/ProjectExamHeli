@@ -1,0 +1,447 @@
+@font-face {
+	src: url(fonts/daunpenh.ttf);
+	font-family:"daunpenh";
+}
+
+@font-face {
+	src: url(fonts/SixCaps.ttf);
+	font-family:"sixcaps";
+}
+
+body, header, nav, ul, footer, main, h1, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #0e0f14;
+    height: 100%;
+    font-family:"daunpenh";
+    color: whitesmoke;
+}
+
+h1, h2, h3, h4 {
+    font-weight: lighter;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.7em;
+    line-height: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-indent: 1em;
+}
+
+.header {
+    font-size: 3.5em;
+    font-family:"sixcaps";
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+/* Navigation */
+.mobileNavigation a {
+    background-color: #0c1e31;
+    text-decoration: none;
+    text-align: left;
+    font-size: 1.5em;
+    padding: 3%;
+    display: block;
+}
+
+.mobileNavigation a.hamburgerIcon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-style: normal;
+}
+
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav li {
+    font-size: 1.5em;
+    border-top: 1px solid whitesmoke;
+}
+
+nav li:first-child {
+    border-top: none;
+}
+
+nav li a {
+    display: block;
+    text-align: left;
+    font-style: normal;
+    padding: 0.5em 2em;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1c5897;
+}
+
+.current {
+    color: #5d728e;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.otherDevices, #linksMenu {
+    display: none;
+}
+
+/* Main */
+a {
+    color: whitesmoke;
+    font-style: oblique;
+}
+
+iframe {
+    width: 100%;
+}
+
+/* index */
+#musk {
+    font-style: italic;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+#earth {
+    display: block;
+    width: 100%;
+}
+
+#contactForm {
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 1%;
+	border-radius: 0.2em;
+    border: 0.1em solid #1c5897;
+}
+
+#yourName, #email, textarea {
+    width: 80%;
+    font-family:"daunpenh";
+    font-size: 1.5em;
+}
+
+button:hover {
+	background-color: #1c5897;
+    color: #000;
+}
+
+button {
+    font-family:"daunpenh";
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 0.2em;
+    color: #000;
+    background-color: #5d728e;
+    text-decoration: underline;
+}
+    
+/* ISS */
+#ISSh2 {
+    display: none;
+}
+
+#issimg {
+    width: 100%;
+}
+
+#issMap {
+    height: 20em;
+}
+
+ /* who`s in space */
+ .cardimg img {
+	width: 90%;
+}
+
+.cardimg {
+    text-align: center;
+}
+
+.cardimg img {
+	width: 80%;
+}
+
+ .countPeople {
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 30em;
+    color: whitesmoke;
+    background: black;
+    border: 1px solid gray;
+    border-radius: 1rem;
+}
+
+ .result {
+     margin: 1rem;
+     padding: 1rem;
+     max-width: 30em;
+     color: whitesmoke;
+     background: black;
+     border: 1px solid gray;
+     border-radius: 1rem;
+ }
+
+ .countPeople {
+    text-align: center;
+}
+
+/* Footer */
+hr {
+    border: 0;
+    height: 0.2em;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #f2f2fa, rgba(0, 0, 0, 0)) ;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 1em;
+}
+
+/* Loader - error */
+.loader {
+    border: 16px solid whitesmoke;;
+    border-top: 16px solid #1c5897;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+   0% {
+       transform: rotate(0deg);
+   }
+   100% {
+       transform: rotate(360deg);
+   }
+}
+
+.error {
+   font-size: 20px;
+   color: red;
+   padding-left: 20px;
+   padding-bottom: 20px;
+}
+
+/* Medium devices (landscape, tablets, 768px and up*/
+@media screen and (min-width: 768px) {
+.header {
+    font-size: 5em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    padding-top: 0;
+}
+
+/* Main */
+.column1 {
+	float: left;
+	width: 50%;
+    max-height: 35em;
+    overflow-y: scroll;
+    margin-bottom: 2em;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: whitesmoke; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #1c5897; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1c5897; 
+  }
+
+.column2 {
+	float: right;
+	width: 50%;
+}
+
+.col-container {
+    display: flex;
+    width: 100%;
+  }
+
+.col {
+    flex: 1;
+    padding: 2em;
+}
+
+.cardimg {
+    padding-left: 5em;
+    margin-top: 5em;
+}
+
+.cardimg img {
+	width: 80%;
+}
+
+.info {
+    padding-left: 1em;
+}
+
+.countPeople {
+    margin: 1em;
+    max-width: 40em;
+}
+
+ .result {
+    margin: 1em;
+    max-width: 40em;
+ }
+
+/* index */
+#musk {
+    padding-left: 6em;
+    padding-right: 6em;
+}
+
+#contactForm {
+	max-width: 25%;
+    margin-top: 4em;
+}
+
+#yourName, #email, textarea {
+    width: 90%;
+}
+
+/* ISS */
+
+#ISSh2 {
+    display: block;
+}
+
+#issimg {
+    width: 90%;
+    padding-top: 3em;
+}
+
+#issMap {
+    height: 20em;
+}
+
+/* Planned orbital missions */
+::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: whitesmoke; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #1c5897; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1c5897; 
+  }
+
+/*Media Query*/
+@media screen and (min-width: 1280px) {
+    nav li {
+        display: inline-block;
+        border-right: 1px solid whitesmoke;
+        border-top: none;
+    }
+    
+    nav li:last-child {
+        border-right: none;
+    }
+    
+    .otherDevices {
+        display: block;
+    }
+    
+    .mobileNavigation {
+        display: none;
+    }
+
+    /* Index */
+    #musk {
+        padding-left: 8em;
+        padding-right: 8em;
+    }
+
+    /* ISS */
+    #issimg {
+        padding-top: 3em;
+        height: 27em;
+    }
+
+    #issMap {
+        height: 35em;
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1024px) {
+    /* POM + WIS */
+    .cardimg {
+        padding-left: 1em;
+    }
+}
+
+@media only screen and (min-width: 1600px){
+
+.info {
+    padding-left: 10em;
+}
+
+.countPeople {
+    margin: 1em;
+    max-width: 50em;
+}
+
+ .result {
+    margin: 1em;
+    max-width: 50em;
+ }
+
+ .cardimg {
+    margin-top: 1em;
+}
+}
+
+
+
+
+
+
+
+

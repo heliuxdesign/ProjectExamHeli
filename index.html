@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- This is a school, Noroff, project exam to make a microsite.
+
+      Hope You like it!
+       _    _   ____   _      _
+      | |  | | |  __| | |    |_|
+      | |__| | | |__  | |    | |
+      |  __  | |  __| | |    | |
+      | |  | | | |__  | |__  | |
+      |_|  |_| |____| |____| |_| Järveläinen / Frontend developer student
+  -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Check out SpaceX`s space technology. SpaceX was founded by Elon musk.  ">
+    <meta name="keywords" content="Elon Musk, SpaceX, International Space station, ISS, astronaut, rocket launch, NASA, satellites">
+    <meta name="author" content="Heli Järveläinen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Home - Space technology</title>   
+  </head>
+  <body>
+    <div id="container">     
+      <nav class="mobileNavigation">
+        <div id="linksMenu">
+          <a href="index.html">Home</a>
+          <a href="iss.html">International Space Station</a>
+          <a href="pom.html">Planned orbital missions</a>
+          <a href="wis.html">Who`s in Space</a>
+          <a href="shs.html">SpaceX - Human spaceflight</a>
+        </div>
+        <a class="hamburgerIcon" onclick="hamburger()">
+          <div>&#9776;</div>
+        </a>
+      </nav>
+        <header>
+          <div class="header">Space technology</div>
+        </header>
+      <nav class="otherDevices">
+        <ul>
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="iss.html">International Space Station</a></li>
+          <li><a href="pom.html">Planned orbital missions</a></li>
+          <li><a href="wis.html">Who`s in Space</a></li>
+          <li><a href="shs.html">SpaceX - Human spaceflight</a></li>
+        </ul>
+      </nav>
+    </div>      
+  <main>
+    <h1>SpaceX - Space technology</h1>
+    <P id="musk">“You want to wake up in the morning and think the future is going to be great
+      - and that’s what being a spacefaring civilization is all about. It’s about 
+      believing in the future and thinking that the future will be better than the past. 
+      And I can’t think of anything more exciting than going out there and being among the stars.”
+      -Elon Musk
+    </P>
+    <img src="images/earth.jpg"  alt="Photo by NASA on Unsplash - image of a part of earth looked from space" id="earth">
+    <p>SpaceX was founded in 2002 by Elon Musk. It is a privat American aerospace manufacturer and space transportation 
+      services company. The goal is to enable colonization of mars, making humanity multiplanetary. The intention 
+      would be for the first people to land on the Mars before 2030. SpaceX has plans for commercial rocket traffic 
+      between the world’s major cities on earth. The rocket would be capable of traveling in less than an hour to anywhere on Earth, 
+      with most trips taking about half an hour.
+    <p>SpaceX offers comercial flights both Earth and lunar orbit with their <a href="shs.html">human spaceflight</a> opportunites.
+      Orbital missons can be all from delivering cargo and supplies to the ISS to launch satellites into orbit. You can find
+      planned SpaceX orbital missions on <a href="pom.html">Planned orbiltal missions page</a>.
+      Space activity refers to human activity in space, which is generally defined as any activity over a distance of more than 
+      100 kilometers from planet Earth.</p>
+    <p>SpaceX has also plans to send three tourists to <a href="iss.html">the International Space Station</a> in late 2021. This wil be 
+      a historic mission to make spaceflight possible for all people who has a dream to travel to space. The <a href="iss.html">ISS</a> 
+      has been continuously occupied for over 20 years. Usually there are an international crew of six people at one time on the ISS. 
+      <a href="wis.html">Who`s in Space </a>page you can follow who is in pace at this very moment, and on which craft he/she is on.
+    </p>
+    <p>One of the collaborators of SpaceX is NASA. Since 2012 SpaceX`s Dragon spacecraft has has delivered cargo to and 
+      from the <a href="iss.html">ISS</a> multiple times, providing missions for NASA. NASA is is sending astronauts to the moon in 
+      the 21st century, and has selected SpaceX`s Starship to achieve this mission.
+    </p>
+    <div id="contactForm">
+      <p>Contact us</p>
+      <div id="message"></div>
+			<form name="form" id="form" onsubmit="return checkForm()">	
+        <input type="text" name="yourName" id="yourName" placeholder="Your name" />
+          <div id="yourNameError" class="error">
+          </div>
+        <input name="email" id="email" placeholder="Email" />
+          <div id="emailError" class="error">
+          </div>
+        <textarea
+          id="writeMessage"
+          name="writeMessage"
+          placeholder="Your message"
+          rows="3"
+          cols="40">
+        </textarea>
+        <div id="writeMessageError" class="error">
+        </div>
+        <div>
+          <button type="submit">SEND MESSAGE</button>
+        </div>
+      </form>
+		</div>
+  </main> 
+  <footer>
+    <hr />
+    <p>@heliuxdesign 2021</p>
+  </footer>  
+  <script src="js/script.js"></script>
+  <script src="js/component/displayError.js"></script>
+  <script src="js/scriptcontact.js"></script>
+  </body>
+
+</html>

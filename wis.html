@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- This is a school, Noroff, project exam to make a microsite.
+  -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Check out SpaceX`s space technology. Who is in space and which craft">
+    <meta name="keywords" content="SpaceX, ISS, astronaut, rocket launch, space">
+    <meta name="author" content="Heli Järveläinen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Who`s in space</title>   
+  </head>
+  <body>
+    <nav class="mobileNavigation">
+      <div id="linksMenu">
+        <a href="index.html">Home</a>
+        <a href="iss.html">International Space Station</a>
+        <a href="pom.html">Planned orbital missions</a>
+        <a href="wis.html">Who`s in Space</a>
+        <a href="shs.html">SpaceX - Human spaceflight</a>
+      </div>
+      <a class="hamburgerIcon" onclick="hamburger()">
+        <div>&#9776;</div>
+      </a>
+    </nav>
+    <header>
+      <div class="header">Space technology</div>
+    </header>  
+    <nav class="otherDevices">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="iss.html">International Space Station</a></li>
+        <li><a href="pom.html">Planned orbital missions</a></li>
+        <li><a class="current" href="wis.html">Who`s in Space</a></li>
+        <li><a href="shs.html">SpaceX - Human spaceflight</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Who`s in space</h1>
+      <p>Astronauts works for example with science, research and takes part of medical experiments
+        to find out how microgavity effects their body. They are maintaining <a href="iss.html">the 
+        International Space Station</a> and equipments. Astronauts do also spacewalks to repair, 
+        or to debloy a satellite. Most missions last two-three weeks, but can be as long as six months.
+      </p>
+      <p>Word "astronaut" refers to those from USA, Canada, Europe and Japan who travel into space. Altough many
+        countries have their own name to astronauts. For example Cosmonats who travel into space are from Russia, 
+        and Taikonauts are from Japan. There have been people atleast from 41 different countries in space.
+      </p>
+      <div class="column1">
+        <div class="info">
+          <div class="countPeople">
+          </div>
+          <div class="results">
+            <div class="loader"></div>
+          </div>
+        </div>
+      </div>
+      <div class="column2"> 
+        <div class="cardimg">
+          <img src="images/niketh-vellanki-QkSN_8XcXwQ-unsplash.jpg" alt="An astronaut in floating in space">
+          <img src="images/brian-mcgowan-I0fDR8xtApA-unsplash.jpg" alt=" An astronaut in space under ISS, and you can see earth behind him/her">  
+          <img src="images/nasa-OLlj17tUZnU-unsplash.jpg" alt="An astronaut in space maintaining ISS">  
+        </div>    
+      </div>
+    </main>
+    <footer>
+      <hr />
+      <p>@heliuxdesign 2021</p>
+    </footer>
+    <script src="js/component/displayError.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scriptWIS.js"></script>
+  </body>
+
+</html>
