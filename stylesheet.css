@@ -17,7 +17,7 @@ body, header, nav, ul, footer, main, h1, div, img {
 body {
     background-color: #0e0f14;
     height: 100%;
-    font-family:"daunpenh";
+    font-family: "daunpenh", Georgia, serif;
     color: whitesmoke;
 }
 
@@ -43,7 +43,7 @@ p {
 
 .header {
     font-size: 3.5em;
-    font-family:"sixcaps";
+    font-family:"sixcaps", Arial, sans-serif;;
     letter-spacing: 0.1em;
     text-align: center;
 }
@@ -138,7 +138,7 @@ iframe {
 
 #yourName, #email, textarea {
     width: 80%;
-    font-family:"daunpenh";
+    font-family:"daunpenh", Georgia, serif;
     font-size: 1.5em;
 }
 
@@ -148,7 +148,7 @@ button:hover {
 }
 
 button {
-    font-family:"daunpenh";
+    font-family:"daunpenh", Georgia, serif;
     font-size: 1.5em;
     font-weight: bold;
     padding-top: 0.2em;
